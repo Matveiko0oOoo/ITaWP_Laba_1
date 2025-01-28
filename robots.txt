@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /logs/
+Allow: /
+
+Sitemap: https://ваш_домен.github.io/sitemap.xml

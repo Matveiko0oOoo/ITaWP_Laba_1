@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.header_line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.logo {
+  flex: 0 0 50%;
+  position: absolute;
+  object-fit: cover;
+}
+.button_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button_with_pointed_line {
+  position: relative;
+  padding: 10px;
+  text-align: center;
+}
+
+.button_with_pointed_line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  border-bottom: 2px dashed black;
+  z-index: -1;
+}
+.info_container {
+  flex: 0 0 100%;
+}
